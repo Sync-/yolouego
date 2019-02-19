@@ -2671,30 +2671,96 @@ F 3 "http://www.ti.com/lit/ds/symlink/opa376.pdf" H 5100 3600 50  0001 C CNN
 	4    5050 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 3300 4750 3500
-Wire Wire Line
-	4750 3700 4850 3700
-Connection ~ 4750 3500
-Wire Wire Line
-	4750 3500 4750 3700
-$Comp
-L power:GNDA #PWR0178
-U 1 1 5CAAD567
-P 4850 3700
-F 0 "#PWR0178" H 4850 3450 50  0001 C CNN
-F 1 "GNDA" H 4855 3527 50  0000 C CNN
-F 2 "" H 4850 3700 50  0001 C CNN
-F 3 "" H 4850 3700 50  0001 C CNN
-	1    4850 3700
-	1    0    0    -1  
-$EndComp
-Connection ~ 4850 3700
-Wire Wire Line
-	4850 3700 4950 3700
 Text GLabel 10400 9900 0    50   Input ~ 0
 HEATER_HIGH
 Wire Wire Line
 	10400 9900 10550 9900
 Connection ~ 10550 9900
+Text GLabel 4350 3300 0    50   Input ~ 0
+DAC3
+Wire Wire Line
+	4350 3300 4500 3300
+Wire Wire Line
+	5350 3400 5500 3400
+Wire Wire Line
+	5500 3400 5500 3900
+Wire Wire Line
+	5500 3900 4700 3900
+Wire Wire Line
+	4700 3900 4700 3500
+Wire Wire Line
+	4700 3500 4750 3500
+$Comp
+L device:C C25
+U 1 1 5CB1FEF6
+P 4500 3450
+F 0 "C25" H 4615 3496 50  0000 L CNN
+F 1 "C" H 4615 3405 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_0603" H 4538 3300 50  0001 C CNN
+F 3 "" H 4500 3450 50  0001 C CNN
+	1    4500 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 3300
+Wire Wire Line
+	4500 3300 4750 3300
+Wire Wire Line
+	4500 3600 4500 3700
+$Comp
+L power:GNDA #PWR0178
+U 1 1 5CB3C94B
+P 4500 3700
+F 0 "#PWR0178" H 4500 3450 50  0001 C CNN
+F 1 "GNDA" H 4505 3527 50  0000 C CNN
+F 2 "" H 4500 3700 50  0001 C CNN
+F 3 "" H 4500 3700 50  0001 C CNN
+	1    4500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02 J4
+U 1 1 5CB3D4FD
+P 6050 3400
+F 0 "J4" H 6130 3392 50  0000 L CNN
+F 1 "Conn_01x02" H 6130 3301 50  0000 L CNN
+F 2 "stmbl-kicad-lib:Pin_Header_Straight_1x02" H 6050 3400 50  0001 C CNN
+F 3 "~" H 6050 3400 50  0001 C CNN
+	1    6050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C26
+U 1 1 5CB3E04D
+P 5700 3550
+F 0 "C26" H 5815 3596 50  0000 L CNN
+F 1 "C" H 5815 3505 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_0603" H 5738 3400 50  0001 C CNN
+F 3 "" H 5700 3550 50  0001 C CNN
+	1    5700 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 3400
+Wire Wire Line
+	5500 3400 5700 3400
+Connection ~ 5700 3400
+Wire Wire Line
+	5700 3400 5850 3400
+$Comp
+L power:GNDA #PWR0179
+U 1 1 5CB76983
+P 5700 3750
+F 0 "#PWR0179" H 5700 3500 50  0001 C CNN
+F 1 "GNDA" H 5705 3577 50  0000 C CNN
+F 2 "" H 5700 3750 50  0001 C CNN
+F 3 "" H 5700 3750 50  0001 C CNN
+	1    5700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3700 5700 3750
+Wire Wire Line
+	5850 3500 5850 3750
+Wire Wire Line
+	5850 3750 5700 3750
+Connection ~ 5700 3750
 $EndSCHEMATC
