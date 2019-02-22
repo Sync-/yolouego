@@ -1654,13 +1654,13 @@ F 3 "http://www.ti.com/lit/ds/symlink/opa376.pdf" H 3950 4350 50  0001 C CNN
 $EndComp
 $Comp
 L Amplifier_Operational:OPA4376 U2
-U 0 1 5CACEC35
+U 1 1 5CACEC35
 P 8500 10650
 F 0 "U2" H 8844 10696 50  0000 L CNN
 F 1 "OPA4376" H 8844 10605 50  0000 L CNN
 F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 8450 10750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa376.pdf" H 8550 10850 50  0001 C CNN
-	0    8500 10650
+	1    8500 10650
 	1    0    0    -1  
 $EndComp
 $Comp
