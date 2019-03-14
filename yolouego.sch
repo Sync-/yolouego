@@ -26,7 +26,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/ref5030.pdf" H 1050 4100 50  0001 C CIN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:MIC5219-3.3 U16
+L Regulator_Linear:MIC5219-3.3YM5 U16
 U 1 1 5A70AB53
 P 14050 1000
 F 0 "U16" H 14050 1342 50  0000 C CNN
@@ -295,7 +295,7 @@ Connection ~ 11300 2550
 Wire Wire Line
 	11300 2550 11300 2600
 $Comp
-L Regulator_Linear:MIC5219-3.3 U14
+L Regulator_Linear:MIC5219-3.3YM5 U14
 U 1 1 5A71359B
 P 13000 1900
 F 0 "U14" H 13000 2242 50  0000 C CNN
@@ -354,14 +354,14 @@ F 3 "" H 7000 10200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:BSP129 Q1
+L stmbl:NFET Q1
 U 1 1 5A7227E6
-P 6300 10550
-F 0 "Q1" H 6505 10596 50  0000 L CNN
-F 1 "BSP129" H 6505 10505 50  0000 L CNN
-F 2 "stmbl-kicad-lib:SOT-23" H 6500 10475 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f" H 6300 10550 50  0001 L CNN
-	1    6300 10550
+P 6350 10500
+F 0 "Q1" H 6555 10546 50  0000 L CNN
+F 1 "BSP129" H 6555 10455 50  0000 L CNN
+F 2 "stmbl-kicad-lib:SOT-23" H 6550 10425 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f" H 6350 10500 50  0001 L CNN
+	1    6350 10500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -428,7 +428,7 @@ Wire Wire Line
 	6800 10200 6400 10200
 Connection ~ 6400 10200
 Wire Wire Line
-	6400 10200 6400 10350
+	6400 10200 6400 10300
 Wire Wire Line
 	6400 9750 6400 9850
 Text GLabel 7100 9950 2    50   Input ~ 0
@@ -448,8 +448,6 @@ F 3 "" H 7150 10800 50  0001 C CNN
 	1    7150 10850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 10750 6400 10800
 Wire Wire Line
 	7150 10800 7150 10850
 Connection ~ 7150 10800
@@ -2808,4 +2806,6 @@ F 3 "" H 8700 6900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8700 6800 8700 6900
+Wire Wire Line
+	6400 10700 6400 10800
 $EndSCHEMATC
